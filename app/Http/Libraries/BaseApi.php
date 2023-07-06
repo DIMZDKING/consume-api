@@ -36,7 +36,7 @@ class BaseApi
 
     public function update(String $endpoint, String $id, Array $data = [])
     {
-        return $this->client()->patch("$endpoint/$id", $data);
+        return $this->client()->put("$endpoint/$id", $data);
     }
 
     public function delete(String $endpoint, String $id)
